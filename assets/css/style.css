@@ -1,0 +1,70 @@
+.container h3{
+	display: inline-block;
+}
+
+.navbar .container p{
+	margin-top:20px;
+}
+
+
+.hero-unit .container {
+	padding: 60px;
+	background-color: #eeeeee;
+	font-size: 18px;
+	font-weight: 200;
+	line-height: 30px;
+	margin-bottom: 30px;
+
+}
+
+.form-group {
+	width: 300px;
+	/*padding-left: 50px;*/*/
+}
+
+form, .error {
+	padding-left:20px;
+}
+
+
+.error{
+	color: red;
+}
+
+.col-sm-5{
+	/*border: 1px solid black;*/
+	
+	padding-bottom: 20px;
+	
+}
+
+
+
+.the-legend {
+    border-style: none;
+    border-width: 0;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 0;
+    width: 180px;
+    padding-left: 20px;
+    background-color: white;
+}
+
+.well{
+	border: 2px solid black;
+	background-color: white;
+
+}
+.the-fieldset {
+	/*border:2px solid black;
+    /*border: 2px groove threedface #444;*/
+    /*-webkit-box-shadow:  0px 0px 0px 0px #000;
+            box-shadow:  0px 0px 0px 0px #000;*/
+
+
+}
+
+
+
+
