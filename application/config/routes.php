@@ -16,6 +16,11 @@ $route['admins/remove'] = 'admins/remove';
 $route['users/edit/:num'] = "admins/edit";
 $route['users/edit'] = "dashboards/edit";
 
+$route['users/show/:num'] = "walls/index";
+
+
+
+
 
 
 $route['404_override'] = '';

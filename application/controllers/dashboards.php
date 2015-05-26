@@ -23,6 +23,7 @@ class Dashboards extends CI_Controller {
             
             $this->load->model('User');
             $users = $this->User->get_all_users();
+
             $this->load->view("user_dashboard", array('users'=>$users)) ;
         }
                 
@@ -32,7 +33,11 @@ class Dashboards extends CI_Controller {
 
     public function edit(){
 
-            $this->load->view("edit_user") ;
+
+            $this->load->model('User');
+            $user = $this->User->get_user_info_by_Id($this->session->userdata('user_id'));
+            $this->load->view("edit_user", array('user'=>$user)) ;
+
         
 
     }

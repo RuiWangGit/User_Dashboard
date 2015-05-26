@@ -44,10 +44,9 @@
 
 		<div class="error">
 			<?php 
-			$this->load->library("form_validation");
-			echo validation_errors(); 
-			echo $this->session->flashdata('error');
-
+				$this->load->library("form_validation");
+				echo validation_errors(); 
+				echo $this->session->flashdata('error');
 		    ?>
 		</div>
 		
@@ -70,7 +69,7 @@
 			<p><a href="/register">Don't have an account? Register.</a></p>
 		</form>
 
-
+		
 
 
 

@@ -42,7 +42,6 @@
 	<div class="container" style="padding: 0 20px">
 		<h2 class="navbar-text pull-left">Edit User #</h2>
 		<p class="navbar-text pull-right"><a class = "btn btn-large btn-info" href="/dashboard">Return to Dashboard</a></p>
-		
 	</div>
 
 	<div class="container" >
@@ -54,7 +53,7 @@
 					<form role="form">
 						<div class="form-group">
 							<label for="email">Email:</label>
-							<input type="email" class="form-control" id="email" placeholder="Enter email">
+							<input type="email" class="form-control" id="email" placeholder="<?=$user['email']?>">
 						</div>
 						<div class="form-group">
 							<label for="first_name">First Name:</label>

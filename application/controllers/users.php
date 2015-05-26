@@ -18,7 +18,6 @@ class Users extends CI_Controller {
 
     
 
-
     public function signin(){
         $email = $this->input->post('email');
         $pwd = $this->input->post('pwd');
@@ -42,13 +41,12 @@ class Users extends CI_Controller {
                 $this->session->set_userdata('email', $user['email']);
                 $this->session->set_userdata('user_level', $user['user_level']);
 
-                header("Location:/dashboard");
-                
+                header("Location:/dashboard");                
             }
             else{
-                // echo "----";
+               
                 $this->session->set_flashdata('error', "wrong email account or password.");
-                 header("Location:/signin");
+                header("Location:/signin");
                 // $this->load->view("signin"); //this is not working properly, flashdata needs another http request
             }
         }
