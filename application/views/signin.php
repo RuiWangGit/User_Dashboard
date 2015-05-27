@@ -31,7 +31,7 @@
 
 	<nav class="navbar navbar-default navbar-static-top">
 		<div class="container">
-			<h3 class="navbar-text nav-left">Test App</h3>
+			<h3 class="navbar-text nav-left">User Dashboard</h3>
 			<p class="navbar-text nav-left"><a href="/" class="navbar-link">Home</a></p>
 			<p class="navbar-text pull-right"><a href="#" class="navbar-link">Sign in</a></p>
 		</div>

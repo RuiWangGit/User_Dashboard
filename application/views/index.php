@@ -31,7 +31,7 @@
 
 	<nav class="navbar navbar-default navbar-static-top">
 		<div class="container">
-			<h3 class="navbar-text nav-left">Test App</h3>
+			<h3 class="navbar-text nav-left">User Dashboard</h3>
 			<p class="navbar-text nav-left"><a href="#" class="navbar-link">Home</a></p>
 			<p class="navbar-text pull-right"><a href="/signin" class="navbar-link">Sign in</a></p>
 		</div>
@@ -45,7 +45,7 @@
 		<div class="container">
 			<h3>Welcome to the Test</h3>
 			<p>We're going to build a cool application using a MVC framework! The application was built with the Rui Wang!</p>
-			<p><a class = "btn btn-large btn-info" href="#">Start</a></p>	
+			<p><a class = "btn btn-large btn-info" href="/users/signin">Start</a></p>	
 		</div>
 
 	</div>

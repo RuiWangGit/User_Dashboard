@@ -63,29 +63,7 @@
 							<label for="last_name">Last Name:</label>
 							<input type="last_name" class="form-control" name="last_name" value="<?=$user['last_name']?>">
 						</div>
-						<div class="form-group">
-							<label for="user_level">User Level:</label>
-							<select class="form-control" name="user_level">
-								<option disabled selected></option>
-								<?php 
-									if ($user['user_level']=="normal") {
-								?>
-									<option value="normal" selected>normal</option>
-									<option value="admin">admin</option>
-								<?php	
-									}
-								?>
-								
-								<?php 
-									if ($user['user_level']=="admin") {
-								?>
-									<option value="normal">normal</option>
-									<option value="admin" selected>admin</option>
-								<?php	
-									}
-								?>
-							</select>
-						</div>
+						
 						<div class="form-group">
 							<input type="hidden" name="submit" value="save">
 							<button type="submit" class="btn btn-default pull-right">Save</button>

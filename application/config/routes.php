@@ -18,6 +18,13 @@ $route['users/edit'] = "dashboards/edit";
 
 $route['users/show/:num'] = "walls/index";
 
+$route['users/edit/info'] = "users/edit_user";
+$route['users/edit/pwd'] = "users/edit_pwd";
+$route['users/edit/description'] = "users/edit_description";
+
+
+
+
 
 
 

@@ -5,18 +5,79 @@ class Users extends CI_Controller {
    public function __construct()
    {
         parent::__construct();
-        // $this->output->enable_profiler();
+        //$this->output->enable_profiler();
     }
 
     public function edit()
     {
-         
-         $this->load->view("edit" ) ;
-                
+        $this->load->view("edit" ) ;         
     }
 
 
-    
+    public function edit_user(){
+
+        // var_dump($_POST);
+        // die;
+
+        $email = $this->input->post('email');
+        $first_name = $this->input->post('first_name');
+        $last_name = $this->input->post('last_name');
+        $last_name = $this->input->post('user_level');
+        
+
+        $this->load->library("form_validation");
+        $this->form_validation->set_rules("first_name", "First Name", "trim|required|alpha");
+        $this->form_validation->set_rules("last_name", "Last Name", "trim|required|alpha");
+        $this->form_validation->set_rules("email", "Email", "valid_email|required|trim");
+        
+
+        if ($this->form_validation->run() === FALSE ){
+            $this->load->view("edit_user" );
+        }
+        else {
+            $this->load->model('User');
+            $this->User->save_user($_POST, $this->session->userdata('user_id'));
+            header("Location:/dashboard");
+        }
+    }
+
+    public function edit_description(){
+
+        // var_dump($_POST);
+        // die;
+        $description = $this->input->post('description');
+        // echo $description;
+        // die;
+        $this->load->model('User');
+        $this->User->save_description($description);
+
+        header("Location:/dashboard");
+        
+    }
+
+
+    public function edit_pwd(){
+
+        // var_dump($_POST);
+        // die;
+        $pwd = $this->input->post('pwd');
+        $pwd_cfn = $this->input->post('pwd_cfn');
+
+        $this->load->library("form_validation");
+        $this->form_validation->set_rules("pwd", "Password","required|trim|min_length[6]");
+        $this->form_validation->set_rules("pwd_cfn", "Confirm Password","matches[pwd]");
+        $this->form_validation->set_message('matches', 'passwords entered are not the same.');
+
+        if ($this->form_validation->run() === FALSE ){
+            $this->load->view("edit_user" );
+        }
+        else {
+            $this->load->model('User');
+            $this->User->change_password($pwd);
+            header("Location:/dashboard");
+        }
+    }
+
 
     public function signin(){
         $email = $this->input->post('email');
@@ -44,7 +105,7 @@ class Users extends CI_Controller {
                 header("Location:/dashboard");                
             }
             else{
-               
+                
                 $this->session->set_flashdata('error', "wrong email account or password.");
                 header("Location:/signin");
                 // $this->load->view("signin"); //this is not working properly, flashdata needs another http request
@@ -107,9 +168,7 @@ class Users extends CI_Controller {
                     //redirect("/welcome");//http://localhost:8888/index.php?welcome, can't run redirect method
                     Header("Location:/dashboard"); 
                 }
-                
-                
-            
+                          
 
             }            
         }

@@ -14,6 +14,8 @@ class Dashboards extends CI_Controller {
     {
         // $this->load->model('Admin');
         // $admin = $this->Admin->getAdmin($this->session->userdata('user_id'));
+
+
         if ( $this->session->userdata('user_level') === 'admin' ){
             $this->load->model('Admin');
             $users = $this->Admin->get_all_users();
@@ -23,6 +25,8 @@ class Dashboards extends CI_Controller {
             
             $this->load->model('User');
             $users = $this->User->get_all_users();
+            // var_dump($users);
+            // die;
 
             $this->load->view("user_dashboard", array('users'=>$users)) ;
         }
@@ -36,8 +40,8 @@ class Dashboards extends CI_Controller {
 
             $this->load->model('User');
             $user = $this->User->get_user_info_by_Id($this->session->userdata('user_id'));
-            $this->load->view("edit_user", array('user'=>$user)) ;
-
+            // $this->load->view("edit_user", array('user'=>$user)) ;
+            $this->load->view("profile", array('user'=>$user)) ;
         
 
     }
