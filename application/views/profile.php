@@ -101,7 +101,7 @@
 					<form role="form" action="/users/edit/description" method="post">
 						
 							<textarea  class="form-control" rows="4" name="description"><?=$user['description']?></textarea>
-							<!-- <input type="hidden" name="description" value=""> -->
+							
 							<input type="hidden" name="submit" value="save">
 							<button type="submit" class="btn btn-default pull-right">Save</button>
 						

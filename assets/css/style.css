@@ -1,3 +1,10 @@
+*{
+	margin:0;
+	padding: 0;
+}
+
+
+
 .container h3{
 	display: inline-block;
 }
@@ -64,6 +71,35 @@ form, .error {
 
 
 }
+
+textarea { resize:vertical; }
+
+
+.message{
+	border: 1px solid black;
+	padding: 2px;
+	margin:  5px;
+	border-radius: 5px;
+}
+
+.comment{
+	border: 1px solid black;
+	padding: 1px;
+	margin: 0px 5px 5px 25px;
+	border-radius: 5px;
+}
+
+.name-field{
+	margin-left: 30px;
+}
+
+.message, .comment{
+	height:40px;
+}
+
+
+
+
 
 
 

@@ -43,7 +43,7 @@
 
 		
 		<div class="container">
-			<h3>Welcome to the Test</h3>
+			<h3>Welcome to the Dashboard</h3>
 			<p>We're going to build a cool application using a MVC framework! The application was built with the Rui Wang!</p>
 			<p><a class = "btn btn-large btn-info" href="/users/signin">Start</a></p>	
 		</div>

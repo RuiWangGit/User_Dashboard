@@ -23,6 +23,12 @@ $route['users/edit/pwd'] = "users/edit_pwd";
 $route['users/edit/description'] = "users/edit_description";
 
 
+$route['walls/post'] = "walls/post";
+$route['walls/add/comment'] = "walls/add";
+
+
+
+
 
 
 
