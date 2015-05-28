@@ -57,23 +57,23 @@
 			<h2>Register</h2>
 			<div class="form-group">
 				<label for="email">Email:</label>
-				<input type="email" class="form-control" name="email" value="micheal@gmail.com" placeholder="Enter email">
+				<input type="email" class="form-control" name="email" value="" placeholder="Enter email">
 			</div>
 			<div class="form-group">
 				<label for="first_name">First Name:</label>
-				<input type="first_name" class="form-control" name="first_name" value="michael" placeholder="Enter first name">
+				<input type="first_name" class="form-control" name="first_name" value="" placeholder="Enter first name">
 			</div>
 			<div class="form-group">
 				<label for="last_name">Last Name:</label>
-				<input type="last_name" class="form-control" name="last_name" value="choi" placeholder="Enter last name">
+				<input type="last_name" class="form-control" name="last_name" value="" placeholder="Enter last name">
 			</div>
 			<div class="form-group">
 				<label for="pwd">Password:</label>
-				<input type="password" class="form-control" name="pwd" value="123456" placeholder="Enter password">
+				<input type="password" class="form-control" name="pwd" value="" placeholder="Enter password">
 			</div>
 			<div class="form-group">
 				<label for="pwd">Password Confirmation:</label>
-				<input type="password" class="form-control" name="pwd_cfn" value="123456" placeholder="Enter password confirmation">
+				<input type="password" class="form-control" name="pwd_cfn" value="" placeholder="Enter password confirmation">
 			</div>
 			
 			<input type="hidden" name="submit" value="register">
