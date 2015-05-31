@@ -98,6 +98,9 @@ textarea { resize:vertical; }
 }
 
 
+#wall-image{
+	background-image:url("../img/gb.jpg");
+}
 
 
 
