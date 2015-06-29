@@ -58,17 +58,17 @@
 			<div class="col-md-4">
 				<h4>Manage Users</h4>
 				<p>Using this application, you'll learn how to add, remove, and edit users for the application.</p>
-				<!-- <a class="btn" href="#pricingShared" role="button" data-toggle="modal">View Plans</a> -->
+				
 			</div>
 			<div class="col-md-4">
 				<h4>Leave Messages</h4>
 				<p>Users will be able to leave a message to another user using this application.</p>
-				<!-- <a class="btn" href="#pricingShared" role="button" data-toggle="modal">View Plans</a> -->
+				
 			</div>
 			<div class="col-md-4">
 				<h4>Edit User Information</h4>
 				<p>Admins will be able to edit another user's information (email address, first name, last name, etc).</p>
-				<!-- <a class="btn" href="#pricingShared" role="button" data-toggle="modal">View Plans</a> -->
+				
 			</div>
 		</div>
 	</div>
