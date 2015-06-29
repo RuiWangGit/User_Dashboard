@@ -7,6 +7,7 @@
 			return $this->db->query($query)->result_array();
 		}
 
+
 		public function get_all_messages_and_comments($id){
 
 			
@@ -64,6 +65,6 @@
 		
 
 	}
-?>
+
 
 

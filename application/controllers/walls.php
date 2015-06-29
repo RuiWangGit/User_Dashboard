@@ -6,6 +6,7 @@ class Walls extends CI_Controller {
 	{
 		parent::__construct();
 		 // $this->output->enable_profiler();
+		 // $this->load->helper('url');
 
 
 
@@ -37,6 +38,8 @@ class Walls extends CI_Controller {
 	}
 
 
+
+	//post new messages
 	public function post(){
 		
 		$this->load->model("Message");
@@ -64,12 +67,16 @@ class Walls extends CI_Controller {
 			$hash[$message['message_id']][] = $message;
 
 		}
-		$this->load->view("user_wall", array('user'=>$user, 'messages'=>$hash));
+		header("Location:/users/show/".$_POST['wall_id']);
+		
+		// $this->load->view("user_wall", array('user'=>$user, 'messages'=>$hash));
+		// redirect("/walls");
 
 	}
 
 
 
+	// add new comment
 	public function add(){
 		// var_dump($_POST);
 		// die;
@@ -89,9 +96,11 @@ class Walls extends CI_Controller {
 			$hash[$message['message_id']][] = $message;
 
 		}
-		$this->load->view("user_wall", array('user'=>$user, 'messages'=>$hash));
 
-
+		header("Location:/users/show/".$_POST['wall_id']);
+		// $this->load->view("user_wall", array('user'=>$user, 'messages'=>$hash));
+		// $this->redirect(
+		// header("Location:/walls");
 
 	}
 
